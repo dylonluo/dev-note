@@ -24,6 +24,26 @@
 #### 日志查看
 1. 在lens查看日志，打开对应的集群，查看对应的pod
 
+想要让Git回退历史，有以下步骤：
+
+#### github 回退
+使用git log命令，查看分支提交历史，确认需要回退的版本
+使用git
+```shell
+reset --hard commit_id
+```
+命令，进行版本回退
+使用
+```shell
+git push origin
+```
+命令，推送至远程分支
+快捷命令：
+
+回退上个版本：
+```shell
+git reset --hard HEAD^
+```
 
 #### 辅助工具
 * Mac命令行工具oh-my-zsh
